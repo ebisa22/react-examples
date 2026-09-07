@@ -5,12 +5,15 @@ const COLORS = ['pink', 'green', 'blue', 'yellow', 'purple'];
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
+  const [numberOfChange,setNumberOfChange]=useState(0);
 
   const onButtonClick = (color) => () => {
     setBackgroundColor(color);
+    setNumberOfChange(numberOfChange+1);
   };
 
   return (
+    <section>
     <div
       className="App"
       style={{
@@ -27,7 +30,9 @@ function App() {
           {color}
         </button>
       ))}
+      <h1 className='numberOfChange'>Background color changed: {numberOfChange}</h1>
     </div>
+    </section>
   );
 }
 
