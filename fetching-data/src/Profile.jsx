@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Bio from './Bio';
-
+/*
 const Profile = ({ delay }) => {
   const [imageURL, setImageURL] = useState(null);
 
@@ -24,9 +24,9 @@ const Profile = ({ delay }) => {
   );
 };
 
-/*
+*/
 const Profile = ({ delay }) => {
-  const [imageURL, setImageURL] = useState(null);
+  const [imageURL, s1etImageURL] = useState(null);
   const [bioText, setBioText] = useState(null);
 
   useEffect(() => {
@@ -57,6 +57,6 @@ const Profile = ({ delay }) => {
     )) || <h1>Loading...</h1>
   );
 };
-*/
+
 
 export default Profile;
